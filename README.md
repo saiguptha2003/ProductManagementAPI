@@ -128,3 +128,20 @@ Product images are securely stored in an Amazon S3 bucket, ensuring scalability,
 ![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/getProductByID.png)
 ![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/parameterGetProduct.png)
 ![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/rabbitMQWorking.png)
+
+---
+## Cache Strategies Used
+#### Lazy Loading (Cache-Aside) used for get Product with ID
+##### On a request, the application first checks the Redis cache.
+##### If the data is found (cache hit), it is returned directly from the cache.
+##### If not found (cache miss), the data is fetched from the SQLite database, stored in the Redis cache for future requests, and then returned.
+
+#### Selective Caching used for get Product with parameters
+##### Product information based on user preferences (user_id) and filters like product_name or price_range was selectively cached to ensure high query performance for repeated requests.
+
+---
+## Compromised Features
+
+#### Testing : problem with module. tried to resolve problems but i have endterm exam tomorrow.
+#### Postgres SQL : Due to low system specifications and no free space i used sqlite3 database for development
+
