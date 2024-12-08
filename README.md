@@ -1,20 +1,20 @@
 # Product Management API
 
-### This is a Product Management API built using the Gin web framework in Go. The API allows users to create, fetch, and manage product details. It integrates with a relational database and message queues to handle product-related operations and asynchronous image processing.
-
+##### This is a Product Management API built using the Gin web framework in Go. The API allows users to create, fetch, and manage product details. It integrates with a relational database and message queues to handle product-related operations and asynchronous image processing.
+---
 ## Features
-### Create Product: Add new products to the database with details such as name, description, images, and price.
-### Get Product by ID: Retrieve detailed information about a specific product.
-### Fetch All Products: Query and filter products based on user ID, price range, and product name.
-### Redis Cache Integration: Optimize product fetching by caching frequently accessed data.
-
+##### Create Product: Add new products to the database with details such as name, description, images, and price.
+##### Get Product by ID: Retrieve detailed information about a specific product.
+##### Fetch All Products: Query and filter products based on user ID, price range, and product name.
+##### Redis Cache Integration: Optimize product fetching by caching frequently accessed data.
+---
 ## Technologies Used
-### Go: Programming language used for implementation.
-### Gin: Web framework for building RESTful APIs.
-### sqlite: Database used to store product information.
-### Redis: Cache layer for improved read performance.
-### RabbitMQ (Queue): Handles asynchronous processing of image-related tasks.
-
+##### Go: Programming language used for implementation.
+##### Gin: Web framework for building RESTful APIs.
+##### sqlite: Database used to store product information.
+##### Redis: Cache layer for improved read performance.
+##### RabbitMQ (Queue): Handles asynchronous processing of image-related tasks.
+---
 ## Installation Setup
 
 ### Clone the Repository
@@ -70,15 +70,15 @@ sudo service redis-server start
 ##### port address : 6379
 ##### Host address : localhost
 
-
-### Run Application
+---
+## Run Application
 ```bash
 go run main.go
 ```
 ##### port address :8080
 ##### hOST address : localhost
-
-### API TESTING
+---
+## API TESTING
 
 #### Open PostMan
 ##### API ENDPOINTS
@@ -110,15 +110,16 @@ go run main.go
 ###### max_price (optional): Maximum product price.
 ###### product_name (optional): Filter by product name (partial match).
 
-
-### Special Feactures
+---
+## Special Feactures
 
 #### Image Storage and Processing
 ##### Amazon S3 Integration:
 Product images are securely stored in an Amazon S3 bucket, ensuring scalability, reliability, and accessibility. This approach minimizes server storage dependency and enhances the system's performance.
 ##### Asynchronous Mechanism:
 The API uses asynchronous processing to handle image uploads. This ensures that the user experience remains smooth, as image processing tasks are offloaded to a queue system (RabbitMQ). The product creation response is immediate, while the image upload and processing continue in the background.
+---
 
-### OUTPUTS:
+## OUTPUTS:
 
 
