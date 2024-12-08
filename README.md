@@ -117,9 +117,14 @@ go run main.go
 ##### Amazon S3 Integration:
 Product images are securely stored in an Amazon S3 bucket, ensuring scalability, reliability, and accessibility. This approach minimizes server storage dependency and enhances the system's performance.
 ##### Asynchronous Mechanism:
-The API uses asynchronous processing to handle image uploads. This ensures that the user experience remains smooth, as image processing tasks are offloaded to a queue system (RabbitMQ). The product creation response is immediate, while the image upload and processing continue in the background.
+###### The API uses asynchronous processing to handle image uploads. This ensures that the user experience remains smooth, as image processing tasks are offloaded to a queue system (RabbitMQ). The product creation response is immediate, while the image upload and processing continue in the background.
 ---
 
 ## OUTPUTS:
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/addProducts.png)
 
-
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/awsS3Storage.png)
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/createProductLog.png)
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/getProductByID.png)
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/parameterGetProduct.png)
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/rabbitMQWorking.png)
