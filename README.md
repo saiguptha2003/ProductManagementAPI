@@ -19,8 +19,8 @@
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-repo/product-management-api.git
-cd product-management-api
+git clone https://github.com/saiguptha2003/ProductManagementAPI
+cd ProductManagementAPI
 ```
 
 ### Install Dependencies Ensure you have Go installed
