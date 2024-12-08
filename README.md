@@ -120,16 +120,6 @@ Product images are securely stored in an Amazon S3 bucket, ensuring scalability,
 ###### The API uses asynchronous processing to handle image uploads. This ensures that the user experience remains smooth, as image processing tasks are offloaded to a queue system (RabbitMQ). The product creation response is immediate, while the image upload and processing continue in the background.
 ---
 
-## OUTPUTS:
-![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/addProducts.png)
-
-![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/awsS3Storage.png)
-![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/createProductLog.png)
-![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/getProductByID.png)
-![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/parameterGetProduct.png)
-![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/rabbitMQWorking.png)
-
----
 ## Cache Strategies Used
 #### Lazy Loading (Cache-Aside) used for get Product with ID
 ##### On a request, the application first checks the Redis cache.
@@ -144,4 +134,15 @@ Product images are securely stored in an Amazon S3 bucket, ensuring scalability,
 
 #### Testing : problem with module. tried to resolve problems but i have endterm exam tomorrow.
 #### Postgres SQL : Due to low system specifications and no free space i used sqlite3 database for development
+---
+## OUTPUTS:
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/addProducts.png)
+
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/awsS3Storage.png)
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/createProductLog.png)
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/getProductByID.png)
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/parameterGetProduct.png)
+![Alt text](https://github.com/saiguptha2003/ProductManagementAPI/blob/main/outputs/rabbitMQWorking.png)
+
+---
 
